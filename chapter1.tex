@@ -1,6 +1,45 @@
 \documentclass{article}[12pt]
+\usepackage{amsmath}
 
 \begin{document}
 
+The origins of representation theory date back to the late 19th century, when F. G. Frobenius invented the notion of a group representation to solve a certain problem in finite group theory$^1$. The representation theory of finite groups was later generalised to the case of Lie groups and their corresponding Lie algebras $^{2,3}$. By the early 20th century, the irreducible representations of simple Lie algebras were completely classified, due to the work of Killing, Cartan, Weyl and others. In chapter 2 we will give a very brief summary of some of the main results in the representation theory of Lie algebras, including this classification theorem.
+
+\vspace[0.5]
+Though the classification thorem for irreducible representations of simple Lie algebras was a major achievement, the problem of explicitly constructing representations in general remained open. By an \emph{explicit construction}, we mean a construction of an explicit basis for the representation, as well as formulae for the matrix elements of the Lie algebra generators in this basis. This problem was eventually solved by Gelfand and Tsetlin in 1950$^{4,5}$. In two short papers, they provided a method for constructing a basis for the Lie algebras $\mathfrak{gl}_n$ and $\mathfrak{o}_n$, parametrised by combinatorial patterns now referred to as Gelfand-Tsetlin
+patterns, as well as explicit formulae for the matrix elements of the generators in this basis. The construction of the basis was a relatively straightforward matter: it relied on the branching rules for irreducible representations of $\mathfrak{gl}_n$ and $\mathfrak{o}_n$. If one considers the canonical subalgebra chains
+\[
+\mathfrak{gl}_1 \subset \mathfrak{gl}_2 \subset ... \subset \mathfrak{gl}_n
+\]
+and
+\[
+\mathfrak{o}_2 \subset \mathfrak{o}_3 \subset ... \subset \mathfrak{o}_n
+\]
+then by considering the restriction of a representation to each subalgebra in the chain, one arrives at a decomposition of the representation into distinct one-dimensional representations. Hence one obtains a basis in terms of the weight vectors in each of the subrepresentations occurring in the decomposition. (We will explain this idea in more detail in chapter 2). What was more mysterious
+was the fact that the (rather complicated) formulae for the matrix elements in Gelfand and Tsetlin's papers were written down without any explanation as to how they were derived.
+
+\vspace[0.5]
+If one sets 
+\[
+A = 
+\left( \begin{array} 
+a^1_1 & a^1_2 & ... & a^1_n \\
+a^2_1 & a^2_2 & ... & a^2_n \\
+\vdost & \vdoys & \ddots & \vdots \\
+a^n_1 & a^n_2 & ... & a^n_n 
+\end{array} \right)
+\]
+and
+\begin{align*}
+\sigma_1 & = \sum_{i=1}^n a^i_i \\
+\sigma_2 & = \sum_{i,j=1}^n a^i_j a^j_i,
+\end{align*}
+then it is easy to verify that on this representation we have
+\begin{align*}
+(A - \sigma_1) & = 0 \textrm{ for } n = 1 \\
+A^2 - (\sigma_1 + 1)A + \frac{1}{2}(\sigma_1^2 + \sigma_1 - \sigma_2) & = 0 \textm{ for } n = 2
+\end{align*}
+Bracken and Green used the characteristic identities to develop formulae for invariants of $\mathfrak{gl}_n$. However, the use of the characteristic identities for determining matrix elements was only carried out later by Gould across a series of
+paper$^{13,16,17,20}.
 
 \end{document}
