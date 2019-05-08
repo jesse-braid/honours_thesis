@@ -1,3 +1,3 @@
 # honours_thesis
 
-undergraduate honours thesis (UQ->SMP->NOV13)
+undergraduate honours thesis
